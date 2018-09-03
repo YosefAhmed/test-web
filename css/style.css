@@ -1,0 +1,197 @@
+body
+{
+	font: 15px/1.5 arial, helvetica, sans-srif;
+	padding:0;
+	margin:0;
+	background-color:#FFF5EE
+}
+
+  /*global*/
+.conatainer
+{
+	width:80%;
+	margin: auto;
+	overflow: hidden;
+}
+.button-1
+{
+	border: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 34px;
+	color: white;
+	background-color: orange;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+header
+{
+	background-color: #583759;
+	color: white;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: orange 3px solid;
+}
+header a
+{
+	color:white;
+	text-decoration:none;;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+li
+{
+	float: left;
+	display: inline;
+	padding:  0 20px 0 20px;
+}
+
+header #branding
+{
+	float: left;
+}
+
+header #branding h1
+{
+	margin: 0;
+}
+
+header nav
+{
+	float: right;
+	margin-top: 10px;
+}
+
+header .highlight, header .current a
+{
+	color:orange;
+	font-weight: bold;
+}
+
+header a:hover
+{
+	font-weight:bold;
+}
+
+#showcase
+{
+	min-height: 400px;
+background-repeat: no-repeat;
+  background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url('../imags/showcase.jpg');
+	background-position: 0,0;
+	text-align: center;
+	color: white;
+	background-size:cover;
+}
+
+#showcase h1
+{
+	margin-top: 150px;
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+
+#showcase p
+{
+	font-size: 20px;
+}
+
+#newsletter
+{
+	background:#583759;
+	color: white;
+	padding:15px;
+}
+#newsletter h1
+{
+	float: left;
+}
+#newsletter form
+{
+	float:right;
+	margin-top: 25px;
+}
+
+#newsletter input[type="Email"]
+{
+	padding: 5px;
+	height: 35px;
+	width: 300px;
+}
+
+#boxs
+{
+	margin-top: 10px;
+}
+
+#boxs .box
+{
+	float: left;
+	padding: 10px;
+	width: 30%;
+	text-align: center;
+}
+
+#boxs .box img
+{
+width:90px;
+}
+
+footer
+{
+	background: darkorange;
+	text-align: center;
+	padding: 5px;
+	margin-top: 20px;
+	color: white;
+}
+
+/*media queries*/
+
+/*==========================| for taplet |=================================*/
+@media(max-width:768px) {
+	header #branding ,header nav,header nav li,	#newsletter h1
+,	#newsletter form
+
+	{
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	header
+	{
+		padding-bottom: 20PX;
+	}
+	#boxs .box
+	{
+		float: none;
+		padding-left: 30%;
+		width: 50%;
+		text-align: center;
+	}
+
+	li
+	{
+		padding:  0 10px 0 10px;
+	}
+
+	#newsletter button
+	{
+		width: 100%;
+	}
+
+	#newsletter form input[type="Email"]
+	{
+		width: 100%;
+	}
+
+}
+/*===========================================================*/
